@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.sm-only,
+.md-only {
+  display: none;
+}
+
+.md-hidden {
+  display: block;
+}
+
+.wrapper {
+  padding-top: 150px;
+  background: #fff;
+}
+
+/* 회원가입 페이지 시작*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title h1 {
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.sns-log {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.sns-log a {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sns-log img {
+  position: absolute;
+  width: 20px;
+  top: 0;
+  left: 0;
+  transform: translate(45%, 45%);
+  object-fit: cover;
+}
+
+.account {
+  font-size: 18px;
+}
+
+.join-box-list {
+  max-width: 330px;
+  margin: 45px auto;
+}
+
+.join-box-item {
+  margin-bottom: 30px;
+}
+
+.inputbox {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.inputbox input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.agree {
+  margin-top: -20px;
+}
+
+.agree-link {
+  text-decoration: underline;
+}
+
+.agree label {
+  display: flex;
+}
+
+.agree p {
+  margin: 15px 0 0 5px;
+}
+
+.button {
+  width: 330px;
+}
+
+#joinbtn {
+  width: 100%;
+  height: 40px;
+  margin-top: 30px;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+#joinbtn a {
+  color: #fff;
+}
+
+#joinbtn:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+#joinbtn:hover#joinbtn a {
+  color: #000;
+}
+
+.boder-act {
+  border: 2px solid #000;
+}
+
+.warn {
+  width: 100%;
+  height: 20px;
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* 회원가입 페이지 끝 */

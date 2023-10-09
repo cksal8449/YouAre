@@ -1,0 +1,411 @@
+/* 반응형 */
+
+/* 태블릿버전 */
+
+@media screen and (max-width : 1400px) {
+
+    .md-hidden {
+        display: none;
+    }
+
+    .md-only {
+        display: block;
+        color: black;
+    }
+
+    /* header */
+    .gnb {
+        padding: 0 40px;
+    }
+
+    .gnb .sidebar-btn {
+        font-size: 30px;
+    }
+
+    .gnb li a {
+        display: block;
+        padding: 25px 0;
+        font-size: 18px;
+    }
+
+    .gnb>.sidebar-btn {
+        width: 230px;
+    }
+
+    .gnb .sidebar-btn a {
+        width: 50px;
+    }
+
+    .gnb .sidebar-btn a i {
+        font-size: 35px;
+    }
+
+    .menu-md-only {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .menu-md-only i {
+        font-size: 25px;
+    }
+
+    .lang {
+        padding: 0;
+    }
+
+    .menu-md-only #lang {
+        display: flex;
+        padding: 0;
+        font-size: 18px;
+        height: 30px;
+    }
+
+    .logo-img {
+        width: 50px;
+    }
+
+    main {
+        width: 100%;
+        font-family: 'Inter', sans-serif;
+        margin: 0 auto;
+    }
+
+    /* main section1 */
+    .main-sec1 {
+        padding-left: 8%;
+        display: flex;
+        width: 100%;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .main-left {
+        padding-right: 4%;
+    }
+
+    .main-left>p {
+        width: 400px;
+        height: 167px;
+        font-size: 23px;
+    }
+
+    .slider {
+        width: 110%;
+        margin: 150px 0 0 0;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 310px;
+    }
+
+    /* main section2 */
+    .main-sec2 {
+        margin: 100px auto 150px;
+        width: 100%;
+    }
+
+    .main-sec2 ul {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .main-sec2 ul li {
+        height: 350px;
+    }
+
+    .main-sec2 .text-box {
+        margin-left: 30px;
+        width: 80%;
+    }
+
+    .footer-top {
+        height: 210px;
+    }
+
+    .footer-top .sns-list {
+        display: flex;
+        gap: 35px;
+    }
+
+    .footer-right.sm-hidden {
+        margin-right: 20px;
+    }
+
+    /* sidebar */
+
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar.active {
+        display: block;
+    }
+
+    .sidemenu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 764px;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 100;
+        overflow: hidden;
+    }
+
+    .sidemenu-title {
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .sidemenu-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+        padding: 0 35px;
+    }
+
+    .sidemenu #close-btn {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    .sidebar #close-btn::before {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 40px;
+        top: 0;
+        right: 18px;
+        background-color: black;
+        transform: rotate(-45deg);
+    }
+
+    .sidebar #close-btn::after {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 40px;
+        top: 0;
+        right: 18px;
+        background-color: black;
+        transform: rotate(45deg);
+    }
+
+    .sidebar-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 50;
+        background-color: rgba(0, 0, 0, .5);
+        backdrop-filter: blur(5px);
+    }
+
+    .sidemenu table {
+        width: 100%;
+        height: auto;
+        border-collapse: collapse;
+    }
+
+    .sidemenu table .side-main {
+        width: 320px;
+        height: 175px;
+        border: 1px solid black;
+        border-left: none;
+        padding-left: 35px;
+        font-size: 22px;
+    }
+
+    .sidemenu table .side-item {
+        width: 445px;
+        border: 1px solid black;
+        border-right: none;
+        padding-left: 40px;
+        font-size: 18px;
+    }
+
+    .sidemenu table .side-item a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 30px;
+    }
+
+    .sidemenu table .side-item i {
+        font-size: 40px;
+    }
+
+    .sidemenu table .side-store {
+        height: 130px;
+        border-right: none;
+    }
+
+    .sidemenu table td {
+        border: 1px solid black
+    }
+
+    .side-user {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 24px;
+        gap: 45px;
+        margin-top: 50px;
+        padding-left: 35px;
+    }
+
+}
+
+
+
+@media screen and (max-width : 768px) {
+
+    .sm-only {
+        display: block;
+    }
+
+    .sm-hidden {
+        display: none;
+    }
+
+    .sm-only.cart {
+        font-size: 35px;
+    }
+
+    .gnb li a {
+        display: block;
+        padding: 15px 0;
+        font-size: 18px;
+    }
+
+    .gnb .logo-img {
+        margin: 0;
+        width: 60px;
+    }
+
+    .gnb .sidebar-btn {
+        width: 40px;
+        font-size: 40px;
+    }
+
+    .gnb .sm-only .cart {
+        font-size: 40px;
+    }
+
+    .main-sec1 {
+        padding: 0 50px;
+    }
+
+    .main-left {
+        display: none;
+        padding: 0;
+    }
+
+    .logo.sm-only {
+        margin: 150px auto 60px;
+    }
+
+    .slider {
+        width: 100%;
+        margin: 0;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 265px;
+    }
+
+    .slide-phrase {
+        font-family: 'Homemade Apple', cursive;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .main-sec2 {
+        margin: 150px auto 200px;
+        width: 100%;
+    }
+
+    .main-sec2 ul {
+        width: 500px;
+    }
+
+    .main-sec2 ul li {
+        width: calc(100% / 1);
+        height: 350px;
+    }
+
+
+    /* 사이드바 */
+
+    .sidemenu {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .sidemenu-top {
+        height: 100px;
+        padding: 0 35px;
+        margin-top: 60px;
+    }
+
+    .sidemenu-top {
+        display: flex;
+        border-top: 1px solid black;
+    }
+
+    .sidemenu #close-btn {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 10px;
+        right: 33px;
+    }
+
+    .sidebar #close-btn::before {
+        width: 1px;
+        height: 40px;
+        top: 0;
+        right: 18px;
+    }
+
+    .sidebar #close-btn::after {
+        width: 1px;
+        height: 40px;
+        top: 0;
+        right: 18px;
+    }
+
+    .sidemenu table .side-main {
+        height: 155px;
+    }
+
+    .sidemenu table .side-store {
+        height: 130px;
+    }
+
+    .sidemenu-top .cart {
+        font-size: 35px;
+    }
+
+    .footer-top .sns-list {
+        display: flex;
+        gap: 35px;
+    }
+
+    .footer-top .sns-list img {
+        width: 32px;
+    }
+
+}

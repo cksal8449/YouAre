@@ -1,0 +1,158 @@
+/* header */
+
+.gnb {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+    padding: 0 20px;
+    z-index: 50;
+}
+
+.gnb li {
+    position: relative;
+}
+
+
+.gnb li a {
+    display: block;
+    padding: 10px 50px;
+    font-size: 18px;
+}
+
+.sub {
+    position: absolute;
+    width: 100%;
+    max-height: 0;
+    transition: all 500ms ease-in-out;
+}
+
+.sub.active {
+    max-height: 270px;
+}
+
+.sub li:first-child {
+    padding-top: 17px;
+}
+
+.sub li a {
+    display: block;
+    padding: 16px 0;
+    font-size: 16px;
+    background-color: #fff;
+    text-align: center;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    transition: all 500ms ease-in-out;
+}
+
+.sub>li>a:hover {
+    background-color: rgb(195, 246, 94);
+    text-decoration: underline;
+}
+
+.boder-top {
+    border-top: 1px solid #000;
+}
+
+.logo-img {
+    display: flex;
+    width: 53px;
+    margin: 0 100px;
+}
+
+.lang {
+    padding: 0 50px 0 90px;
+}
+
+#lang {
+    border: none;
+    font-size: 18px;
+    font-weight: 100;
+    padding-right: 10px;
+}
+
+
+
+
+/* footer */
+.footer-wrap {
+    position: relative;
+    /* transform: translateY(100%); */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-top {
+    width: 100%;
+    /* margin-top: 50px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    background-color: #0B0B0B;
+}
+
+.footer-left {
+    display: flex;
+    font-size: 14px;
+}
+
+.footer-left li {
+    width: 100px;
+    font-size: 14px;
+}
+
+.footer-left a {
+    color: #fff;
+}
+
+.footer-sub li {
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.footer-right {
+    width: 630px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #fff;
+    background-color: #0B0B0B;
+}
+
+.footer-bottom ul {
+    display: flex;
+    justify-content: end;
+    padding: 10px 50px 10px 0;
+}
+
+.footer-bottom li {
+    margin-right: 20px;
+}
+
+.footer-bottom li:last-child {
+    margin-right: 0;
+}
+
+.footer-top .sns-list img {
+    width: 40px;
+    object-fit: cover;
+}
+
+.footer-bottom img {
+    padding: 0 50px;
+    width: 32px;
+    object-fit: cover;
+    padding: 5px;
+}
