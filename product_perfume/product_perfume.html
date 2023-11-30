@@ -1,184 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product perfume</title>
+    <!-- css 연결 -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/header_footer.css" />
+    <link rel="stylesheet" href="../css/mobile.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product perfume</title>
-  <!-- css 연결 -->
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/header_footer.css">
-  <link rel="stylesheet" href="./css/mobile.css">
-  <!-- google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&family=Playfair+Display:wght@500&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
-  <!-- JQuery -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <!-- boxIcon -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Serif&family=Playfair+Display:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- boxIcon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-  <div class="wrapper">
-    <!-- header -->
-    <header>
-      <nav>
-        <ul class="gnb">
-          <li class="md-only sidebar-btn"><a href=""><i class='sidebar-btn bx bx-menu'></i></a></li>
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <header>
+        <nav>
+          <ul class="gnb">
+            <li class="md-only sidebar-btn">
+              <a href=""><i class="sidebar-btn bx bx-menu"></i></a>
+            </li>
 
-          <li class="md-hidden"><a href="">PRODUCT</a>
-            <ul class="sub">
-              <li><a class="boder-top" href="/product_perfume/product_perfume.html">PARFUM</a></li>
-              <li><a href="/perduct_candle/perduct_candle.html">CANDLE</a></li>
-            </ul>
-          </li>
-          <li class="md-hidden"><a href="">ABOUT</a>
-            <ul class="sub">
-              <li><a class="boder-top" href="">BAND STORY</a></li>
-              <li><a href="">DEVELOPER STORY</a></li>
-            </ul>
-          </li>
-          <li class="md-hidden"><a href="">STORE</a>
-          </li>
-          <li class="header-logo">
-            <a href="../home.html"><img class="logo-img" src="../images/logo.png" alt="youare-logo"></a>
-          </li>
-          <li class="md-hidden">
-            <form class="lang md-hidden" action="#">
-              <label for="lang"></label>
-              <select name="languages" id="lang" onchange="i18next.changeLanguage(this.value)">
-                <option value="en">EN</option>
-                <option value="ko">KR</option>
-              </select>
-            </form>
-          </li>
-          <li class="md-hidden"><a href="/login/login.html">LOGIN</a></li>
-          <li class="md-hidden"><a href="/cart">CART</a></li>
-          <li class="md-only sm-hidden">
-            <div class="menu-md-only">
-              <form class="lang" action="#">
+            <li class="md-hidden">
+              <a href="">PRODUCT</a>
+              <ul class="sub">
+                <li>
+                  <a
+                    class="boder-top"
+                    href="/product_perfume/product_perfume.html"
+                    >PARFUM</a
+                  >
+                </li>
+                <li>
+                  <a href="/perduct_candle/perduct_candle.html">CANDLE</a>
+                </li>
+              </ul>
+            </li>
+            <li class="md-hidden">
+              <a href="">ABOUT</a>
+              <ul class="sub">
+                <li><a class="boder-top" href="">BAND STORY</a></li>
+                <li><a href="">DEVELOPER STORY</a></li>
+              </ul>
+            </li>
+            <li class="md-hidden"><a href="">STORE</a></li>
+            <li class="header-logo">
+              <a href="../home.html"
+                ><img
+                  class="logo-img"
+                  src="../images/logo.png"
+                  alt="youare-logo"
+              /></a>
+            </li>
+            <li class="md-hidden">
+              <form class="lang md-hidden" action="#">
                 <label for="lang"></label>
-                <select name="languages" id="lang" onchange="i18next.changeLanguage(this.value)">
+                <select
+                  name="languages"
+                  id="lang"
+                  onchange="i18next.changeLanguage(this.value)"
+                >
                   <option value="en">EN</option>
                   <option value="ko">KR</option>
                 </select>
               </form>
-              <a href="/login/login.html"><i class='bx bxs-user'></i></a>
-              <a href="/cart"><i class='bx bxs-shopping-bag'></i></a>
+            </li>
+            <li class="md-hidden"><a href="/login/login.html">LOGIN</a></li>
+            <li class="md-hidden"><a href="/cart">CART</a></li>
+            <li class="md-only sm-hidden">
+              <div class="menu-md-only">
+                <form class="lang" action="#">
+                  <label for="lang"></label>
+                  <select
+                    name="languages"
+                    id="lang"
+                    onchange="i18next.changeLanguage(this.value)"
+                  >
+                    <option value="en">EN</option>
+                    <option value="ko">KR</option>
+                  </select>
+                </form>
+                <a href="/login/login.html"><i class="bx bxs-user"></i></a>
+                <a href="/cart"><i class="bx bxs-shopping-bag"></i></a>
+              </div>
+            </li>
+            <li class="sm-only">
+              <a href="/cart"><i class="cart bx bxs-shopping-bag"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- header 끝, 메인시작 -->
+
+      <!-- 제품목록 -->
+      <section>
+        <h1 class="produt-type">PARFUM</h1>
+        <div class="box-list"></div>
+      </section>
+
+      <!-- sidebar -->
+      <div class="sidebar md-only">
+        <div class="sidemenu">
+          <div class="sidemenu-top">
+            <p class="sidemenu-title">CATEGORY</p>
+            <button type="button" id="close-btn"></button>
+            <span class="sm-only"
+              ><a href="/cart"><i class="cart bx bxs-shopping-bag"></i></a
+            ></span>
+          </div>
+          <table>
+            <tr>
+              <td rowspan="2" class="side-main"><a href="">PRODUCT</a></td>
+              <td class="side-item">
+                <a href="../product_perfume/product_perfume.html"
+                  >PARFUM <i class="bx bx-chevron-right"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td class="side-item">
+                <a href="../perduct_candle/perduct_candle.html"
+                  >CANDLE <i class="bx bx-chevron-right"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="2" class="side-main"><a href="">ABOUT</a></td>
+              <td class="side-item">
+                <a href="">BAND STORY <i class="bx bx-chevron-right"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td class="side-item">
+                <a href=""
+                  >DEVELOPER STORY <i class="bx bx-chevron-right"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="side-main side-store">
+                <a href="">STORE</a>
+              </td>
+            </tr>
+          </table>
+
+          <ul class="side-user">
+            <li><a href="">EN</a></li>
+            <li><a href="../login/login.html">LOGIN</a></li>
+            <li><a href="/cart">CART</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-overlay"></div>
+      </div>
+
+      <!-- footer -->
+      <footer>
+        <div class="footer-wrap">
+          <div class="footer-top">
+            <ul class="footer-left md-hidden">
+              <li>
+                <a href="">PRODUCT</a>
+                <ul class="footer-sub">
+                  <li><a href="">PARFUM</a></li>
+                  <li><a href="">CANDLE</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">ABOUT</a>
+                <ul class="footer-sub">
+                  <li><a href="">BAND STORY</a></li>
+                  <li><a href="">DEVELOPER STORY</a></li>
+                </ul>
+              </li>
+              <li><a href="">STORE</a></li>
+            </ul>
+
+            <div class="footer-right sm-hidden">
+              <span
+                >Representatives : Ju-eun Kim, Chan-mi Lee | Address :
+                Sintanjin-dong, Daedeok-gu, Daejeon |<br />Number :
+                010-7140-5493, 010-3941-4102 | Email : ga473625@gmail.com,
+                cksal8449@naver.com |<br />
+                Company Registration Number : 123-45-678910 | Hosting Operator :
+                youare</span
+              >
             </div>
-          </li>
-          <li class="sm-only"><a href="/cart"><i class='cart bx bxs-shopping-bag'></i></a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- header 끝, 메인시작 -->
 
-    <!-- 제품목록 -->
-    <section>
-      <h1 class="produt-type">PARFUM</h1>
-      <div class="box-list">
-      </div>
-    </section>
+            <div class="footer-right sm-only">
+              <span
+                >Representatives : Ju-eun Kim, Chan-mi Lee<br />Address :
+                Sintanjin-dong, Daedeok-gu, Daejeon <br />Number :
+                010-7140-5493, 010-3941-4102<br />Email : ga473625@gmail.com,
+                cksal8449@naver.com
+                <br />
+                Company Registration Number : 123-45-678910<br />Hosting
+                Operator : youare</span
+              >
+            </div>
 
-    <!-- sidebar -->
-    <div class="sidebar md-only">
-      <div class="sidemenu">
-        <div class="sidemenu-top">
-          <p class="sidemenu-title">CATEGORY</p>
-          <button type="button" id="close-btn"></button>
-          <span class="sm-only"><a href="/cart"><i class='cart bx bxs-shopping-bag'></i></a></span>
+            <ul class="sns-list md-only">
+              <li>
+                <a href="https://github.com/" target="_blank"
+                  ><img src="../images/github-logo-white.png" alt="github-logo"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    src="../images/twitter-logo-white.png"
+                    alt="twitter-logo"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    src="../images/instagram-logo-white.png"
+                    alt="instagram-logo"
+                /></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-bottom md-hidden">
+            <ul class="sns-list">
+              <li>
+                <a href="https://github.com/" target="_blank"
+                  ><img src="../images/github-logo-white.png" alt="github-logo"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    src="../images/twitter-logo-white.png"
+                    alt="twitter-logo"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    src="../images/instagram-logo-white.png"
+                    alt="instagram-logo"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <table>
-          <tr>
-            <td rowspan="2" class="side-main"><a href="">PRODUCT</a></td>
-            <td class="side-item"><a href="../product_perfume/product_perfume.html">PARFUM <i
-                  class='bx bx-chevron-right'></i></a></td>
-          </tr>
-          <tr>
-            <td class="side-item"><a href="../perduct_candle/perduct_candle.html">CANDLE <i
-                  class='bx bx-chevron-right'></i></a></td>
-          </tr>
-          <tr>
-            <td rowspan="2" class="side-main"><a href="">ABOUT</a></td>
-            <td class="side-item"><a href="">BAND STORY <i class='bx bx-chevron-right'></i></a></td>
-          </tr>
-          <tr>
-            <td class="side-item"><a href="">DEVELOPER STORY <i class='bx bx-chevron-right'></i></a></td>
-          </tr>
-          <tr>
-            <td colspan="2" class="side-main side-store"><a href="">STORE</a></td>
-          </tr>
-        </table>
-
-        <ul class="side-user">
-          <li><a href="">EN</a></li>
-          <li><a href="../login/login.html">LOGIN</a></li>
-          <li><a href="/cart">CART</a></li>
-        </ul>
-      </div>
-      <div class="sidebar-overlay"></div>
+      </footer>
     </div>
-
-    <!-- footer -->
-    <footer>
-      <div class="footer-wrap">
-
-        <div class="footer-top">
-          <ul class="footer-left md-hidden">
-            <li><a href="">PRODUCT</a>
-              <ul class="footer-sub">
-                <li><a href="">PARFUM</a></li>
-                <li><a href="">CANDLE</a></li>
-              </ul>
-            </li>
-            <li><a href="">ABOUT</a>
-              <ul class="footer-sub">
-                <li><a href="">BAND STORY</a></li>
-                <li><a href="">DEVELOPER STORY</a></li>
-              </ul>
-            </li>
-            <li><a href="">STORE</a></li>
-          </ul>
-
-          <div class="footer-right sm-hidden">
-            <span>Representatives : Ju-eun Kim, Chan-mi Lee | Address : Sintanjin-dong, Daedeok-gu, Daejeon
-              |<br>Number : 010-7140-5493, 010-3941-4102 | Email : ga473625@gmail.com, cksal8449@naver.com
-              |<br>
-              Company Registration Number : 123-45-678910 | Hosting Operator : youare</span>
-          </div>
-
-          <div class="footer-right sm-only">
-            <span>Representatives : Ju-eun Kim, Chan-mi Lee<br>Address : Sintanjin-dong, Daedeok-gu, Daejeon
-              <br>Number : 010-7140-5493, 010-3941-4102<br>Email : ga473625@gmail.com,
-              cksal8449@naver.com
-              <br>
-              Company Registration Number : 123-45-678910<br>Hosting Operator : youare</span>
-          </div>
-
-          <ul class="sns-list md-only">
-            <li><a href="https://github.com/" target="_blank"><img src="../images/github-logo-white.png"
-                  alt="github-logo"></a></li>
-            <li><a href=""><img src="../images/twitter-logo-white.png" alt="twitter-logo"></a></li>
-            <li><a href=""><img src="../images/instagram-logo-white.png" alt="instagram-logo"></a></li>
-          </ul>
-        </div>
-
-        <div class="footer-bottom md-hidden">
-          <ul class="sns-list">
-            <li><a href="https://github.com/" target="_blank"><img src="../images/github-logo-white.png"
-                  alt="github-logo"></a></li>
-            <li><a href=""><img src="../images/twitter-logo-white.png" alt="twitter-logo"></a></li>
-            <li><a href=""><img src="../images/instagram-logo-white.png" alt="instagram-logo"></a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-  </div>
-  <script src="./perfume.js"></script>
-</body>
-
+    <script src="./perfume.js"></script>
+  </body>
 </html>

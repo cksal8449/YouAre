@@ -2,286 +2,280 @@
 /* 반응형은 mobile.css로 옮김 */
 
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
-    color: #333;
+  text-decoration: none;
+  color: #333;
 }
 
 html,
 body {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .sm-only,
 .md-only {
-    display: none;
+  display: none;
 }
 
 .md-hidden {
-    display: block;
+  display: block;
 }
 
 .wrapper {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 /* section1 */
 main {
-    width: 1400px;
-    margin: 0 auto;
+  width: 1400px;
+  margin: 0 auto;
 }
 
 .main-sec1 {
-    padding: 100px 0 0 100px;
-    display: flex;
+  padding: 100px 0 0 100px;
+  display: flex;
 }
 
 .main-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 485px;
-    height: 604px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 485px;
+  height: 604px;
 }
 
-.main-left>p {
-    width: 480px;
-    height: 188px;
-    font-size: 28px;
-    color: #7F7F7F;
-    line-height: 160%;
-    font-family: 'Noto Sans KR', sans-serif;
+.main-left > p {
+  width: 480px;
+  height: 188px;
+  font-size: 28px;
+  color: #7f7f7f;
+  line-height: 160%;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .main-left .logo {
-    width: 151px;
-    margin-bottom: 65px;
+  width: 151px;
+  margin-bottom: 65px;
 }
-
-
 
 /* 슬라이드 */
 .slider {
-    margin: 126px 0 0 50px;
-    overflow: hidden;
-    width: 800px;
-    list-style: none;
+  margin: 10% 0 0 50px;
+  overflow: hidden;
+  width: 60%;
+  list-style: none;
 }
 
 .swiper {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .swiper-wrapper {
-    transition-timing-function: linear;
+  transition-timing-function: linear;
 }
 
 .swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
 }
 
 .swiper-slide img {
-    width: 189px;
-    height: 394px;
+  width: 189px;
+  height: 394px;
 }
-
-
 
 /* section2 */
 .main-sec2 {
-    margin: 230px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  margin: 15% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .main-sec2 ul {
-    margin: auto 0;
-    width: 1150px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  margin: auto 0;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .main-sec2 ul li {
-    width: calc(100% / 2);
-    height: 406px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Inria Serif', serif;
+  width: calc(100% / 2);
+  height: 406px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Inria Serif", serif;
 }
 
 .main-sec2 li:nth-child(1) {
-    background-image: url('../images/candle/main02.jpg');
+  background-image: url("../images/candle/main02.jpg");
 }
 
 .main-sec2 li:nth-child(2) {
-    background-image: url('../images/candle/Candle1-7.png');
+  background-image: url("../images/candle/Candle1-7.png");
 }
 
 .main-sec2 li:nth-child(3) {
-    background-image: url('../images/candle/Candle1-3.png');
+  background-image: url("../images/candle/Candle1-3.png");
 }
 
 .main-sec2 li:nth-child(4) {
-    background-image: url('../images/candle/main01.jpg');
+  background-image: url("../images/candle/main01.jpg");
 }
 
 .main-sec2 li:nth-child(5) {
-    background-image: url('../images/candle/Candle1-3.png');
+  background-image: url("../images/candle/Candle1-3.png");
 }
 
 .main-sec2 .text-box {
-    color: #fff;
-    width: 442px;
-    height: auto;
-    margin: 0 auto;
+  color: #fff;
+  width: 442px;
+  height: auto;
+  margin: 0 auto;
 }
 
 .text-box .title {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .text-box .note {
-    margin-top: 5px;
-    font-size: 18px;
-    color: #dfdfdf;
+  margin-top: 5px;
+  font-size: 18px;
+  color: #dfdfdf;
 }
 
 .text-box .description {
-    margin-top: 25px;
-    font-size: 18px;
-    font-weight: lighter;
-    color: #fff
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: lighter;
+  color: #fff;
 }
 
 .main-sec2 li:nth-child(1) .text-box {
-    margin-top: 70px;
+  margin-top: 70px;
 }
 
 .main-sec2 li:nth-child(4) .text-box {
-    margin-top: 85px;
+  margin-top: 85px;
 }
-
-
 
 /* 팝업 */
 .popup-box {
-    position: fixed;
-    display: flex;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 330px;
-    height: 560px;
-    padding: 40px 30px 30px;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    z-index: 100;
+  position: fixed;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 330px;
+  height: 560px;
+  padding: 40px 30px 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  z-index: 100;
 }
 
 .popup-box #popup-close-btn {
-    position: fixed;
-    top: 5px;
-    right: 0px;
-    border: none;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    background-color: transparent;
+  position: fixed;
+  top: 5px;
+  right: 0px;
+  border: none;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .popup-box #popup-close-btn::before {
-    position: absolute;
-    content: '';
-    width: 1px;
-    height: 35px;
-    top: -3px;
-    right: 15px;
-    background-color: #fff;
-    transform: rotate(-45deg);
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 35px;
+  top: -3px;
+  right: 15px;
+  background-color: #fff;
+  transform: rotate(-45deg);
 }
 
 .popup-box #popup-close-btn::after {
-    position: absolute;
-    content: '';
-    width: 1px;
-    height: 35px;
-    top: -3px;
-    right: 15px;
-    background-color: #fff;
-    transform: rotate(45deg);
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 35px;
+  top: -3px;
+  right: 15px;
+  background-color: #fff;
+  transform: rotate(45deg);
 }
 
 .popup-box a {
-    display: flex;
+  display: flex;
 }
 
 .popup-box img {
-    width: 330px;
+  width: 330px;
 }
 
 .popup-box p {
-    margin-top: 30px;
-    font-family: 'Noto Sans KR', sans-serif;
+  margin-top: 30px;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .popup-box label {
-    position: absolute;
-    display: flex;
-    bottom: 0px;
-    left: 0px;
-    gap: 10px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 18px;
-    font-family: 'Inria Serif', serif;
+  position: absolute;
+  display: flex;
+  bottom: 0px;
+  left: 0px;
+  gap: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Inria Serif", serif;
 }
 
 .popup-box input[type="checkbox"] {
-    display: none;
+  display: none;
 }
 
-.popup-box input[type="checkbox"]+label {
-    position: relative;
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    border: 3px solid #a5a5a5;
+.popup-box input[type="checkbox"] + label {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 3px solid #a5a5a5;
 }
 
-.popup-box input[id="none-popup"]:checked+label::after {
-    position: absolute;
-    content: '✔';
-    font-size: 25px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    left: -3px;
-    top: -10px;
+.popup-box input[id="none-popup"]:checked + label::after {
+  position: absolute;
+  content: "✔";
+  font-size: 25px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  left: -3px;
+  top: -10px;
 }
 
 .popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 50;
-    background-color: rgba(0, 0, 0, .5);
-    backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
 }

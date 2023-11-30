@@ -48,7 +48,7 @@ a {
 }
 
 .box-item a:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .box-item {
@@ -124,8 +124,7 @@ a {
   border: 1px solid #000;
 }
 
-
-@media screen and (max-width : 1200px) {
+@media screen and (max-width: 1200px) {
   .produt-type {
     margin: 0 auto;
     padding-bottom: 80px;
@@ -133,8 +132,10 @@ a {
   }
 
   .box-list {
-    width: 1000px;
+    /* width: 1000px; */
+    width: 100%;
     padding: 0 80px;
+    margin-bottom: 70px;
   }
 
   .box-item {
@@ -177,14 +178,21 @@ a {
   }
 }
 
-@media screen and (max-width : 768px) {
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding-top: 120px;
+  }
+
   .produt-type {
     font-size: 20px;
+    padding-bottom: 20px;
   }
 
   .box-list {
-    width: 720px;
+    /* width: 720px; */
+    width: 100%;
     padding: 0;
+    margin-bottom: 70px;
   }
 
   .box-item {
