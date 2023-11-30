@@ -1,6 +1,9 @@
 /* 반응형 */
 /* 태블릿버전 */
 
+
+
+
 @media screen and (max-width : 1400px) {
 
   .md-hidden {
@@ -123,6 +126,8 @@
   }
 
   .footer-top {
+    display: block;
+    background-color: red;
     height: 210px;
   }
 
@@ -304,7 +309,7 @@
   }
 
   .main-sec1 {
-    padding: 0 50px;
+    padding: 0;
   }
 
   .main-left {
@@ -398,6 +403,7 @@
   .sidemenu-top .cart {
     font-size: 35px;
   }
+
 
   .footer-top .sns-list {
     display: flex;

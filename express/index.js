@@ -10,3 +10,23 @@ app.get('', function (requests, response) {
 })
 
 app.use(express.static(__dirname))
+
+app.get('/product_perfume', function (requests, response) {
+    response.sendFile(__dirname + '/product_perfume/product_perfume.html')
+})
+
+app.get('/perduct_candle', function (requests, response) {
+    response.sendFile(__dirname + '/perduct_candle/perduct_candle.html')
+})
+
+app.get('/login', function (requests, response) {
+    response.sendFile(__dirname + '/login/login.html')
+})
+
+app.get('/signup', function (requests, response) {
+    response.sendFile(__dirname + '/signup/signup.html')
+})
+
+app.get('/product_detail', function (requests, response) {
+    response.sendFile(__dirname + '/product_detail/product_detail.html')
+})

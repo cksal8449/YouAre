@@ -122,8 +122,13 @@ $(".swiper").each(function (index) {
     slidesPerView: 3,
 
     breakpoints: {
+      500: {
+        slidesPerView: 2, //브라우저가 해당 사이즈보다 작을 때
+        spaceBetween: 12,
+      },
+
       768: {
-        slidesPerView: 4, //브라우저가 해당 사이즈보다 작을 때
+        slidesPerView: 4,
         spaceBetween: 10,
       },
 
