@@ -17,8 +17,8 @@ app.get("/product_perfume", function (requests, response) {
   response.sendFile(__dirname + "/product_perfume/product_perfume.html");
 });
 
-app.get("/product_perfume", function (requests, response) {
-  response.sendFile(__dirname + "/product_perfume/product_perfume.html");
+app.get("/product_candle", function (requests, response) {
+  response.sendFile(__dirname + "/product_candle/product_candle.html");
 });
 
 app.get("/login", function (requests, response) {
