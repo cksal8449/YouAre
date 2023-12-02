@@ -50,9 +50,8 @@ a {
 
 .box-item {
   position: relative;
-  width: calc((80%) / 3);
+  width: calc((100% - 120px) / 3);
   overflow: hidden;
-  flex-grow: 1;
 }
 
 .box-item a {
