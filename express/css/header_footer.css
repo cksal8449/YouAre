@@ -1,6 +1,10 @@
 /* 반응형은 mobile.css로 옮김 */
 /* header */
 
+header {
+  width: 100%;
+}
+
 .gnb {
   position: fixed;
   top: 0;
@@ -22,12 +26,13 @@
 
 .gnb li a {
   display: block;
-  padding: 10px 50px;
+  padding: 10px 40px;
   font-size: 18px;
 }
 
 .sub {
   position: absolute;
+  bottom: -2px;
   width: 100%;
   max-height: 0;
   transition: all 500ms ease-in-out;
@@ -63,13 +68,19 @@
 }
 
 .logo-img {
-  display: flex;
   width: 53px;
-  margin: 0 100px;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 7%;
 }
 
 .lang {
-  padding: 0 50px 0 90px;
+  padding: 0 50px;
 }
 
 #lang {
@@ -86,19 +97,17 @@ footer {
 
 .footer-wrap {
   position: relative;
-  /* transform: translateY(100%); */
   width: 100%;
   margin: 0 auto;
+  background-color: #0b0b0b;
 }
 
 .footer-top {
   width: 100%;
-  /* margin-top: 150px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 50px;
-  background-color: #0b0b0b;
 }
 
 .footer-left {
@@ -128,7 +137,6 @@ footer {
 
 .footer-bottom {
   border-top: 1px solid #fff;
-  background-color: #0b0b0b;
 }
 
 .footer-bottom ul {

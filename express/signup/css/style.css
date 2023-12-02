@@ -165,4 +165,8 @@ main {
   font-weight: 700;
 }
 
+.button {
+  margin-bottom: 80px;
+}
+
 /* 회원가입 페이지 끝 */

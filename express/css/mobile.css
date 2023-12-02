@@ -110,6 +110,7 @@
   /* main section2 */
   .main-sec2 {
     width: 100%;
+    margin: 5% auto 15%;
   }
 
   .main-sec2 ul {
@@ -127,8 +128,7 @@
   }
 
   .footer-top {
-    height: 210px;
-    margin-top: 0px;
+    min-height: 200px;
   }
 
   .footer-top .sns-list {
@@ -395,6 +395,17 @@
 
   .sidemenu-top .cart {
     font-size: 35px;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-right.sm-only {
+    width: 100%;
   }
 
   .footer-top .sns-list {
